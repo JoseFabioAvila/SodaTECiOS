@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D5C1F001D94E8F300FE82EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C1EFF1D94E8F300FE82EB /* AppDelegate.swift */; };
+		1D5C1F021D94E8F300FE82EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C1F011D94E8F300FE82EB /* ViewController.swift */; };
+		1D5C1F051D94E8F300FE82EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C1F031D94E8F300FE82EB /* Main.storyboard */; };
+		1D5C1F071D94E8F300FE82EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C1F061D94E8F300FE82EB /* Assets.xcassets */; };
+		1D5C1F0A1D94E8F300FE82EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C1F081D94E8F300FE82EB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D5C1EFC1D94E8F300FE82EB /* SodaTECiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SodaTECiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5C1EFF1D94E8F300FE82EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D5C1F011D94E8F300FE82EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D5C1F041D94E8F300FE82EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D5C1F061D94E8F300FE82EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D5C1F091D94E8F300FE82EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D5C1F0B1D94E8F300FE82EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D5C1EF91D94E8F300FE82EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D5C1EF31D94E8F300FE82EB = {
+			isa = PBXGroup;
+			children = (
+				1D5C1EFE1D94E8F300FE82EB /* SodaTECiOS */,
+				1D5C1EFD1D94E8F300FE82EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D5C1EFD1D94E8F300FE82EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D5C1EFC1D94E8F300FE82EB /* SodaTECiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D5C1EFE1D94E8F300FE82EB /* SodaTECiOS */ = {
+			isa = PBXGroup;
+			children = (
+				1D5C1EFF1D94E8F300FE82EB /* AppDelegate.swift */,
+				1D5C1F011D94E8F300FE82EB /* ViewController.swift */,
+				1D5C1F031D94E8F300FE82EB /* Main.storyboard */,
+				1D5C1F061D94E8F300FE82EB /* Assets.xcassets */,
+				1D5C1F081D94E8F300FE82EB /* LaunchScreen.storyboard */,
+				1D5C1F0B1D94E8F300FE82EB /* Info.plist */,
+			);
+			path = SodaTECiOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D5C1EFB1D94E8F300FE82EB /* SodaTECiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5C1F0E1D94E8F300FE82EB /* Build configuration list for PBXNativeTarget "SodaTECiOS" */;
+			buildPhases = (
+				1D5C1EF81D94E8F300FE82EB /* Sources */,
+				1D5C1EF91D94E8F300FE82EB /* Frameworks */,
+				1D5C1EFA1D94E8F300FE82EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SodaTECiOS;
+			productName = SodaTECiOS;
+			productReference = 1D5C1EFC1D94E8F300FE82EB /* SodaTECiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D5C1EF41D94E8F300FE82EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jose Fabio Avila Estrada";
+				TargetAttributes = {
+					1D5C1EFB1D94E8F300FE82EB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1D5C1EF71D94E8F300FE82EB /* Build configuration list for PBXProject "SodaTECiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D5C1EF31D94E8F300FE82EB;
+			productRefGroup = 1D5C1EFD1D94E8F300FE82EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D5C1EFB1D94E8F300FE82EB /* SodaTECiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D5C1EFA1D94E8F300FE82EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5C1F0A1D94E8F300FE82EB /* LaunchScreen.storyboard in Resources */,
+				1D5C1F071D94E8F300FE82EB /* Assets.xcassets in Resources */,
+				1D5C1F051D94E8F300FE82EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D5C1EF81D94E8F300FE82EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5C1F021D94E8F300FE82EB /* ViewController.swift in Sources */,
+				1D5C1F001D94E8F300FE82EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D5C1F031D94E8F300FE82EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5C1F041D94E8F300FE82EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D5C1F081D94E8F300FE82EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5C1F091D94E8F300FE82EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D5C1F0C1D94E8F300FE82EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D5C1F0D1D94E8F300FE82EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D5C1F0F1D94E8F300FE82EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SodaTECiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SodaTECiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1D5C1F101D94E8F300FE82EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SodaTECiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SodaTECiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D5C1EF71D94E8F300FE82EB /* Build configuration list for PBXProject "SodaTECiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5C1F0C1D94E8F300FE82EB /* Debug */,
+				1D5C1F0D1D94E8F300FE82EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D5C1F0E1D94E8F300FE82EB /* Build configuration list for PBXNativeTarget "SodaTECiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5C1F0F1D94E8F300FE82EB /* Debug */,
+				1D5C1F101D94E8F300FE82EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D5C1EF41D94E8F300FE82EB /* Project object */;
+}
