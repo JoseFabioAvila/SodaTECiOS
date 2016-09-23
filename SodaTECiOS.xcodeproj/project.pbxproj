@@ -12,6 +12,7 @@
 		1D5C1F051D94E8F300FE82EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C1F031D94E8F300FE82EB /* Main.storyboard */; };
 		1D5C1F071D94E8F300FE82EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C1F061D94E8F300FE82EB /* Assets.xcassets */; };
 		1D5C1F0A1D94E8F300FE82EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C1F081D94E8F300FE82EB /* LaunchScreen.storyboard */; };
+		1D5C1F121D94F57F00FE82EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C1F111D94F57F00FE82EB /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1D5C1F061D94E8F300FE82EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D5C1F091D94E8F300FE82EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D5C1F0B1D94E8F300FE82EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D5C1F111D94F57F00FE82EB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 			children = (
 				1D5C1EFF1D94E8F300FE82EB /* AppDelegate.swift */,
 				1D5C1F011D94E8F300FE82EB /* ViewController.swift */,
+				1D5C1F111D94F57F00FE82EB /* MenuViewController.swift */,
 				1D5C1F031D94E8F300FE82EB /* Main.storyboard */,
+				1D5C1F0B1D94E8F300FE82EB /* Info.plist */,
 				1D5C1F061D94E8F300FE82EB /* Assets.xcassets */,
 				1D5C1F081D94E8F300FE82EB /* LaunchScreen.storyboard */,
-				1D5C1F0B1D94E8F300FE82EB /* Info.plist */,
 			);
 			path = SodaTECiOS;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5C1F021D94E8F300FE82EB /* ViewController.swift in Sources */,
+				1D5C1F121D94F57F00FE82EB /* MenuViewController.swift in Sources */,
 				1D5C1F001D94E8F300FE82EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +290,7 @@
 				1D5C1F101D94E8F300FE82EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
