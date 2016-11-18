@@ -16,10 +16,15 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var totalPrice: UILabel!
     @IBOutlet weak var saldoAcount: UILabel!
     
+    @IBOutlet weak var nombreUser: UILabel!
+    @IBOutlet weak var horarioMenu: UILabel!
+    
+    
     var itemList = [ItemAlimento]()
     var item1 : ItemAlimento
     var total : Int
     var saldo : Int
+    var info: String
     
     //inicializa las variables necesarias para correr el View
     required init?(coder aDecoder: NSCoder) {
@@ -38,14 +43,16 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         total = 0
         saldo = 10000
+        info = ""
         
         
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
-        saldoAcount.text = "Saldo: $"+String(saldo)
-        totalPrice.text = "Total: $"+String(total)
+        saldoAcount.text = "Saldo: ₡"+String(saldo)
+        totalPrice.text = "Total: ₡"+String(total)
+        horarioMenu.text = info
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -73,7 +80,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.photo.image = itemList[indexPath.row].image
         cell.name.text = itemList[indexPath.row].name
-        cell.price.text = "$"+String(itemList[indexPath.row].price)
+        cell.price.text = "₡"+String(itemList[indexPath.row].price)
         
         configureCheckmarkForCel(cell, item: itemList[indexPath.row])
         
@@ -114,8 +121,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             saldo = saldo + item.price
             total = total - item.price
         }
-        saldoAcount.text = "Saldo: $"+String(saldo)
-        totalPrice.text = "Total: $"+String(total)
+        saldoAcount.text = "Saldo: ₡"+String(saldo)
+        totalPrice.text = "Total: ₡"+String(total)
     }
     
     

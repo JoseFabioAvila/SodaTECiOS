@@ -14,7 +14,7 @@ class SelectMenuViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     
     var pickerDataSource = ["Desayuno", "Almuerzo", "Cena"]
-    var munuSeleccionado = ""
+    var menuSeleccionado = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,19 +46,19 @@ class SelectMenuViewController: UIViewController, UIPickerViewDataSource, UIPick
         return pickerDataSource[row]
     }
     
-    //Cuando se selecciona un item del PickerView se guarda en la variable munuSeleccionado, el horario de comida seleccionado
+    //Cuando se selecciona un item del PickerView se guarda en la variable menuSeleccionado, el horario de comida seleccionado
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        munuSeleccionado = pickerDataSource[row]
+        menuSeleccionado = pickerDataSource[row]
     }
     
-    //deside que consulta hacer al webservice para cada horario de comida
+    /*/deside que consulta hacer al webservice para cada horario de comida
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         if identifier == "menuSegue"{
-            if munuSeleccionado == "Desayuno"{
+            if menuSeleccionado == "Desayuno"{
                 //mandar a cargar los platos del desayuno
             }
-            else if munuSeleccionado == "Almuerzo"{
+            else if menuSeleccionado == "Almuerzo"{
                 //mandar a cargar los platos del almuerzo
             }
             else{
@@ -67,6 +67,12 @@ class SelectMenuViewController: UIViewController, UIPickerViewDataSource, UIPick
             return true
         }
         return false
+    }*/
+    
+    //envia el menu seleccionado a cargar en la vista de menu
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destino = segue.destinationViewController as! MenuViewController
+        destino.info = menuSeleccionado
     }
 
 }
