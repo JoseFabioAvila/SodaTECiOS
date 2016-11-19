@@ -19,7 +19,7 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         
         //desavilitar el teclado al hacer tap en cualquier parte.
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
     
@@ -28,11 +28,11 @@ class ViewController: UIViewController{
         view.endEditing(true)
     }
     
-    @IBAction func carnetUp(sender: AnyObject) {
+    @IBAction func carnetUp(_ sender: AnyObject) {
         carnet.becomeFirstResponder()
     }
     
-    @IBAction func pinUp(sender: AnyObject) {
+    @IBAction func pinUp(_ sender: AnyObject) {
         pin.becomeFirstResponder()
     }
 
@@ -42,7 +42,7 @@ class ViewController: UIViewController{
     }
     
     //Validacion de los datos de los TextField para verificar que no esten vacios
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "selectMenuSegue"{
             //let controller = segue.destinationViewController as! MenuViewController
             if carnet.text == "" || pin.text == "" {
@@ -52,10 +52,10 @@ class ViewController: UIViewController{
                 alert.title = "Campos vacios"
                 alert.message = "Debes ingresar el carnet y pin"
                 
-                let alertController = UIAlertController(title: "Atencion", message: "Debes llenar ambas casillas.", preferredStyle: UIAlertControllerStyle.Alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+                let alertController = UIAlertController(title: "Atencion", message: "Debes llenar ambas casillas.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
                 
-                self.presentViewController(alertController, animated: true, completion: nil)
+                self.present(alertController, animated: true, completion: nil)
                 
                 return false
             }

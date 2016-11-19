@@ -28,34 +28,34 @@ class SelectMenuViewController: UIViewController, UIPickerViewDataSource, UIPick
     }
     
     //Logout
-    @IBAction func Logout(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)   }
+    @IBAction func Logout(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)   }
     
     //Numero de componentes que conforma al PickerView
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     //Cantidad de Items del PickerView
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerDataSource.count;
     }
     
     //Carga cada uno de los Items del arreglo al PickerView
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerDataSource[row]
     }
     
     //Cuando se selecciona un item del PickerView se guarda en la variable menuSeleccionado, el horario de comida seleccionado
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         menuSeleccionado = pickerDataSource[row]
     }
     
     
     //envia el menu seleccionado a cargar en la vista de menu
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destino = segue.destinationViewController as! MenuViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destino = segue.destination as! MenuViewController
         destino.info = menuSeleccionado
     }
 

@@ -65,18 +65,18 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     //Boton de salir del menu
-    @IBAction func salir(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func salir(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     //Define la cantidad de celdas del TableView
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemList.count
     }
     
     //Carga los datos a cada una de las celdas del TableView
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell",forIndexPath: indexPath) as! CustomCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as! CustomCell
         
         cell.photo.image = itemList[indexPath.row].image
         cell.name.text = itemList[indexPath.row].name
@@ -88,8 +88,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     //Cuando se selecciona una celda del TableView
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let cell = tableView.cellForRowAtIndexPath(indexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath)
         {
             let item = itemList[indexPath.row]
             item.isCheck = !item.isCheck
@@ -97,22 +97,22 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             putInMyDish(cell, item: item)
         }
         
-        tableView.deselectRowAtIndexPath(indexPath, animated: true )
+        tableView.deselectRow(at: indexPath, animated: true )
     }
     
     
     //Cambia el Checkmark de true a false, o de false a true, cuando el usuario pulsa el la celda del alimento escogido
-    func configureCheckmarkForCel(cell: UITableViewCell, item: ItemAlimento){
+    func configureCheckmarkForCel(_ cell: UITableViewCell, item: ItemAlimento){
         if item.isCheck{
-            cell.accessoryType = .Checkmark
+            cell.accessoryType = .checkmark
         }
         else {
-            cell.accessoryType = .None
+            cell.accessoryType = .none
         }
     }
     
     //Coloca el alimento en en la bandeja y aumenta o decrementa el precio en el total y saldo, segun si esta con el checkmark o no.
-    func putInMyDish(cell: UITableViewCell,item: ItemAlimento){
+    func putInMyDish(_ cell: UITableViewCell,item: ItemAlimento){
         if item.isCheck{
             saldo = saldo - item.price
             total = total + item.price
