@@ -54,7 +54,7 @@
                                 <rect key="frame" x="26" y="401" width="280" height="42"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="  Login  ">
+                                <state key="normal" title=" LOG IN">
                                     <color key="titleColor" red="1" green="0.99881719359999999" blue="0.99893775119999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>

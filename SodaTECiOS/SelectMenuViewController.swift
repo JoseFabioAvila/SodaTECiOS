@@ -52,22 +52,6 @@ class SelectMenuViewController: UIViewController, UIPickerViewDataSource, UIPick
         menuSeleccionado = pickerDataSource[row]
     }
     
-    /*/deside que consulta hacer al webservice para cada horario de comida
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
-        if identifier == "menuSegue"{
-            if menuSeleccionado == "Desayuno"{
-                //mandar a cargar los platos del desayuno
-            }
-            else if menuSeleccionado == "Almuerzo"{
-                //mandar a cargar los platos del almuerzo
-            }
-            else{
-                //mandar a cargar los platos de la cena
-            }
-            return true
-        }
-        return false
-    }*/
     
     //envia el menu seleccionado a cargar en la vista de menu
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
