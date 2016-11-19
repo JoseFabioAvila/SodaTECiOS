@@ -16,9 +16,11 @@
 		1DF536101D9ECA7A00274D5D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5360F1D9ECA7A00274D5D /* MenuViewController.swift */; };
 		1DF536121D9ECEE900274D5D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF536111D9ECEE900274D5D /* CustomCell.swift */; };
 		1DF536141DA800D100274D5D /* ItemAlimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF536131DA800D100274D5D /* ItemAlimento.swift */; };
+		35A73E2EEF9F5D2C88F34191 /* Pods_SodaTECiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109C7E5E6B9CF96A7274E412 /* Pods_SodaTECiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		109C7E5E6B9CF96A7274E412 /* Pods_SodaTECiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SodaTECiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5C1EFC1D94E8F300FE82EB /* SodaTECiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SodaTECiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5C1EFF1D94E8F300FE82EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5C1F011D94E8F300FE82EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		1DF5360F1D9ECA7A00274D5D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1DF536111D9ECEE900274D5D /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1DF536131DA800D100274D5D /* ItemAlimento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAlimento.swift; sourceTree = "<group>"; };
+		852B858AC437E216F6C6B5C3 /* Pods-SodaTECiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodaTECiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SodaTECiOS/Pods-SodaTECiOS.release.xcconfig"; sourceTree = "<group>"; };
+		BF159C4D65345AFDA172748A /* Pods-SodaTECiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodaTECiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SodaTECiOS/Pods-SodaTECiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A73E2EEF9F5D2C88F34191 /* Pods_SodaTECiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				1D5C1EFE1D94E8F300FE82EB /* SodaTECiOS */,
 				1D5C1EFD1D94E8F300FE82EB /* Products */,
+				2ACCB6280A0E6E9B1202E0A5 /* Pods */,
+				FA4E22DA8BFCFEE9F4B70E05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			path = SodaTECiOS;
 			sourceTree = "<group>";
 		};
+		2ACCB6280A0E6E9B1202E0A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF159C4D65345AFDA172748A /* Pods-SodaTECiOS.debug.xcconfig */,
+				852B858AC437E216F6C6B5C3 /* Pods-SodaTECiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA4E22DA8BFCFEE9F4B70E05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				109C7E5E6B9CF96A7274E412 /* Pods_SodaTECiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D5C1F0E1D94E8F300FE82EB /* Build configuration list for PBXNativeTarget "SodaTECiOS" */;
 			buildPhases = (
+				8529F5C1E376BB0E881D2254 /* [CP] Check Pods Manifest.lock */,
 				1D5C1EF81D94E8F300FE82EB /* Sources */,
 				1D5C1EF91D94E8F300FE82EB /* Frameworks */,
 				1D5C1EFA1D94E8F300FE82EB /* Resources */,
+				19676ABCB3259CEF99B6AA98 /* [CP] Embed Pods Frameworks */,
+				9B8503E79402DC5BC86C9ADC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Jose Fabio Avila Estrada";
 				TargetAttributes = {
 					1D5C1EFB1D94E8F300FE82EB = {
@@ -142,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19676ABCB3259CEF99B6AA98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SodaTECiOS/Pods-SodaTECiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8529F5C1E376BB0E881D2254 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B8503E79402DC5BC86C9ADC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SodaTECiOS/Pods-SodaTECiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D5C1EF81D94E8F300FE82EB /* Sources */ = {
@@ -193,8 +268,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -238,8 +315,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,12 +337,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		1D5C1F0F1D94E8F300FE82EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF159C4D65345AFDA172748A /* Pods-SodaTECiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SodaTECiOS/Info.plist;
@@ -276,6 +357,7 @@
 		};
 		1D5C1F101D94E8F300FE82EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852B858AC437E216F6C6B5C3 /* Pods-SodaTECiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SodaTECiOS/Info.plist;

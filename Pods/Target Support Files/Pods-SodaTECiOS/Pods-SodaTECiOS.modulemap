@@ -1,0 +1,6 @@
+framework module Pods_SodaTECiOS {
+  umbrella header "Pods-SodaTECiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
