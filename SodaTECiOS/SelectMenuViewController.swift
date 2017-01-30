@@ -14,12 +14,22 @@ class SelectMenuViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     
     var pickerDataSource = ["Desayuno", "Almuerzo", "Cena"]
-    var menuSeleccionado = ""
+    var menuSeleccionado : String
+    var user : UserData
+    
+    //inicializa las variables necesarias para correr el View
+    required init?(coder aDecoder: NSCoder) {
+        
+        self.user = UserData()
+        self.menuSeleccionado = pickerDataSource[0]
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
+        self.menuSeleccionado = pickerDataSource[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +67,7 @@ class SelectMenuViewController: UIViewController, UIPickerViewDataSource, UIPick
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! MenuViewController
         destino.info = menuSeleccionado
+        destino.user = user
     }
 
 }

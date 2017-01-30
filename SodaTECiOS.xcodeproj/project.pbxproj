@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5BE4831DF2003F0063AEDE /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BE4821DF2003E0063AEDE /* RestApiManager.swift */; };
+		1D5BE4871DF220690063AEDE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BE4861DF220690063AEDE /* UserData.swift */; };
 		1D5C1F001D94E8F300FE82EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C1EFF1D94E8F300FE82EB /* AppDelegate.swift */; };
 		1D5C1F021D94E8F300FE82EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C1F011D94E8F300FE82EB /* ViewController.swift */; };
 		1D5C1F051D94E8F300FE82EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C1F031D94E8F300FE82EB /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		109C7E5E6B9CF96A7274E412 /* Pods_SodaTECiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SodaTECiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5BE4821DF2003E0063AEDE /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		1D5BE4861DF220690063AEDE /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		1D5C1EFC1D94E8F300FE82EB /* SodaTECiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SodaTECiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5C1EFF1D94E8F300FE82EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5C1F011D94E8F300FE82EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				1DF536111D9ECEE900274D5D /* CustomCell.swift */,
 				1DF536131DA800D100274D5D /* ItemAlimento.swift */,
 				1DC2214E1DB9EE950069A501 /* SelectMenuViewController.swift */,
+				1D5BE4821DF2003E0063AEDE /* RestApiManager.swift */,
+				1D5BE4861DF220690063AEDE /* UserData.swift */,
 			);
 			path = SodaTECiOS;
 			sourceTree = "<group>";
@@ -225,9 +231,11 @@
 			files = (
 				1D5C1F021D94E8F300FE82EB /* ViewController.swift in Sources */,
 				1DF536101D9ECA7A00274D5D /* MenuViewController.swift in Sources */,
+				1D5BE4871DF220690063AEDE /* UserData.swift in Sources */,
 				1DF536121D9ECEE900274D5D /* CustomCell.swift in Sources */,
 				1D5C1F001D94E8F300FE82EB /* AppDelegate.swift in Sources */,
 				1DF536141DA800D100274D5D /* ItemAlimento.swift in Sources */,
+				1D5BE4831DF2003F0063AEDE /* RestApiManager.swift in Sources */,
 				1DC2214F1DB9EE950069A501 /* SelectMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

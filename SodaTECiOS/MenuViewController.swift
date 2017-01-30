@@ -19,40 +19,41 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var nombreUser: UILabel!
     @IBOutlet weak var horarioMenu: UILabel!
     
-    
+    var RestCall : RestApiManager
     var itemList = [ItemAlimento]()
-    var item1 : ItemAlimento
     var total : Int
     var saldo : Int
     var info: String
+    var user: UserData
+    
     
     //inicializa las variables necesarias para correr el View
     required init?(coder aDecoder: NSCoder) {
         
-        itemList = [ItemAlimento] ()
-        item1 = ItemAlimento(name: "Arroz", price: 100, image: "arroz")
-        itemList.append(item1)
-        item1 = ItemAlimento(name: "Frijoles", price: 200, image: "frijoles")
-        itemList.append(item1)
-        item1 = ItemAlimento(name: "Huevo duro", price: 300, image: "huevo_duro")
-        itemList.append(item1)
-        item1 = ItemAlimento(name: "Ensalada", price: 50, image: "ensalada")
-        itemList.append(item1)
-        item1 = ItemAlimento(name: "Fresco chan", price: 200, image: "fresco_chan")
-        itemList.append(item1)
+        self.RestCall = RestApiManager()
+        self.itemList = [ItemAlimento] ()
         
-        total = 0
-        saldo = 10000
-        info = ""
+        self.itemList = []
+        
+        self.total = 0
+        self.saldo = 10000
+        self.info = ""
+        self.user = UserData()
         
         
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
+        
+        saldo = user.saldo
+        nombreUser.text = user.nombre
         saldoAcount.text = "Saldo: ₡"+String(saldo)
         totalPrice.text = "Total: ₡"+String(total)
         horarioMenu.text = info
+        
+        itemList = RestCall.getComidas(comida: info)
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -77,8 +78,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //Carga los datos a cada una de las celdas del TableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as! CustomCell
-        
-        cell.photo.image = itemList[indexPath.row].image
+        cell.photo.image = UIImage(named: "sorry-image-not-available")
         cell.name.text = itemList[indexPath.row].name
         cell.price.text = "₡"+String(itemList[indexPath.row].price)
         

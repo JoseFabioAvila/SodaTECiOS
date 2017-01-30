@@ -13,6 +13,16 @@ class ViewController: UIViewController{
     //TextFields de carnet y pin
     @IBOutlet weak var carnet: UITextField!
     @IBOutlet weak var pin: UITextField!
+    @IBOutlet weak var recordarme: UISwitch!
+    
+    var RestCall : RestApiManager
+    var user: UserData
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.RestCall = RestApiManager()
+        self.user = UserData()
+        super.init(coder: aDecoder)
+    }
     
     //Inicializador de la vista
     override func viewDidLoad() {
@@ -58,10 +68,42 @@ class ViewController: UIViewController{
                 self.present(alertController, animated: true, completion: nil)
                 
                 return false
+            } else {
+                if carnet.text == pin.text{
+                    let user2 = RestCall.getUserData(id: carnet.text!)
+                    print(user2[1])
+                    if user2 == [] {
+                        print("holliis")
+                        return false
+                    }
+                    
+                    user = UserData(nombre: user2[1], saldo: Int(user2[2])!, id: Int(user2[0])!)
+                    
+                    print(user.nombre)
+                    
+                    return true
+                }else{
+                    //View de alerta
+                    let alert = UIAlertController()
+                    alert.title = "Datos invalidos"
+                    alert.message = "Verifica tus datos"
+                    
+                    let alertController = UIAlertController(title: "Atencion", message: "Los datos deben coincidir con los tuyos.", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                    return false
+
+                }
             }
-            return true
         }
         return false
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destino = segue.destination as! SelectMenuViewController
+        destino.user = user
     }
 
 }
